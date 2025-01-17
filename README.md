@@ -4,6 +4,7 @@ Este repositório contém três projetos básicos criados com Elixir e o framewo
 1. **API CRUD** - Gerencia tarefas com operações de criação, leitura, atualização e exclusão.
 2. **Chat em Tempo Real** - Sistema de chat em tempo real com Phoenix Channels.
 3. **API de Autenticação** - Sistema de autenticação com cadastro e login de usuários.
+4. **API para Gerenciar Livros para Testes** - Sistema para realização de teste unitários.
 
 ## Requisitos
 Antes de começar, certifique-se de que você tenha instalado:
@@ -30,7 +31,7 @@ Antes de começar, certifique-se de que você tenha instalado:
 
 3. Configure o banco de dados no arquivo `config/dev.exs`, ajustando as credenciais de acesso ao PostgreSQL.
 
-4. Crie e migre o banco de dados:
+4. Crie e migre o banco de dados (não é necessário para o chat em tempo real):
    ```bash
    mix ecto.create
    mix ecto.migrate
@@ -89,5 +90,16 @@ Se encontrar algum erro ou tiver dúvidas:
 1. Verifique se o banco de dados PostgreSQL está ativo.
 2. Verifique se as dependências foram instaladas corretamente (algumas delas exigem um compilador C para serem instaladas).
 3. Verifique os arquivos de configuração (`config/dev.exs`).
+
+## API de Gerenciamento de Livros
+
+### Funcionalidades
+- Sistema básico de CRUD para realização de testes.
+
+### Como Acessar
+1. Realize os teste com 
+   ```bash
+   mix test
+   ```
 
 ## Tabela de comparativos e observações no PDF
